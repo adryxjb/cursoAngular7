@@ -1,0 +1,28 @@
+<h1>Componente 2 con HTML</h1>
+<p>esto es un parrafo</p>
+<hr />
+
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th></th>
+        <th>Producto</th>
+        <th>Marca</th>
+        <th>Categoria</th>
+        <th>Precio</th>
+        <th>Estatus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button (click)="emitirEvento($event)">Padre</button></td>
+        <td>{{nombre}}</td>
+        <td>{{marca}}</td>
+        <td>{{categoria}}</td>
+        <td>${{precio}}.00</td>
+        <td>No se sabe</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

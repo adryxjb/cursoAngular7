@@ -1,0 +1,81 @@
+<h1>Componente 3 con HTML</h1>
+<p>esto es un parrafo</p>
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Precio</th>
+        <th>Estatus</th>
+      </tr>
+    </thead>
+    <ng-container *ngFor="let producto of productos">
+      <!-- <tr *ngIf="producto.status == true"> -->
+      <!-- <tr [style.color] ="producto.status == false ? 'blue' : 'black'" > -->
+      <!-- <tr [class.agotado]="producto.status == false"> -->
+      <tr
+        [class.destacado]="producto.marca == 'Samsung'"
+        [class.agotado]="producto.status == false"
+      >
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.marca }}</td>
+        <td>{{ producto.precio }}</td>
+        <td>{{ producto.status }}</td>
+      </tr>
+    </ng-container>
+  </table>
+</div>
+
+<!-- <div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Precio</th>
+        <th>Estatus</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.marca }}</td>
+      <td>{{ producto.precio }}</td>
+      <td>{{ producto.status }}</td>
+    </tr>
+    <tr *ngIf="productos[0].status == true">
+      <td>{{ productos[0].nombre }}</td>
+      <td>{{ productos[0].marca }}</td>
+      <td>{{ productos[0].precio }}</td>
+      <td>{{ productos[0].status }}</td>
+    </tr>
+    <tr *ngIf="productos[1].status == true">
+      <td>{{ productos[1].nombre}}</td>
+      <td>{{ productos[1].marca }}</td>
+      <td>{{ productos[1].precio }}</td>
+      <td>{{ productos[1].status }}</td>
+    </tr>
+
+    <tr *ngIf="productos[2].status == true">
+      <td>{{ productos[2].nombre }}</td>
+      <td>{{ productos[2].marca }}</td>
+      <td>{{ productos[2].precio }}</td>
+      <td>{{ productos[2].status }}</td>
+    </tr>
+
+    <tr *ngIf="productos[3].status == true">
+      <td>{{ productos[3].nombre }}</td>
+      <td>{{ productos[3].marca }}</td>
+      <td>{{ productos[3].precio }}</td>
+      <td>{{ productos[3].status }}</td>
+    </tr>
+
+    <tr *ngIf="productos[4].status == true">
+      <td>{{ productos[4].nombre }}</td>
+      <td>{{ productos[4].marca }}</td>
+      <td>{{ productos[4].precio }}</td>
+      <td>{{ productos[4].status }}</td>
+    </tr>
+  </table>
+</div> -->
+<hr />

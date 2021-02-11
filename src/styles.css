@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+.agotado {
+  color: darkred;
+  font-weight: bold;
+}
+
+.destacado {
+  background-color: rgb(157, 184, 104);
+}
+.navbar-nav .active {
+  border-bottom: 3px solid #af1b3f;
+  font-weight: bold;
+  font-size: 20px;
+}
